@@ -2,7 +2,7 @@
 <extension id="workspacer" status="released" xmlns="http://getsymphony.com/schemas/extension/1.0">
     <name>Workspacer</name>
     <description>Files in the Workspace folder can be managed and edited. Page XSL templates can also be edited from the Pages page.</description>
-    <repo type="github">https://github.com/petertron/workspacer</repo>
+    <repo type="github">https://github.com/animaux/workspacer</repo>
     <types>
         <type>Workflow</type>
     </types>
@@ -12,8 +12,18 @@
             <email>peter.s@mail.uk</email>
             <website>http://peter.is-best.net</website>
         </author>
+        <author>
+            <name github="animaux" symphony="animaux">Alexander Rutz</name>
+            <email>ar@animaux.de</email>
+            <website>https://animaux.de</website>
+        </author>
     </authors>
     <releases>
+        <release version="0.8.2" date="2023-05-22" min="2.7.10">
+            - CSS Tweaks
+            - remove Cmd-S for saving
+            - make visible for Devs only
+        </release>
         <release version="0.8.1" date="2020-12-08" min="2.5.0" max="3.x.x">
             - Modification for Symphony 3.
             - Mark Symphony 3 compatibility.

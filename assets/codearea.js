@@ -545,8 +545,8 @@
             I.settings = {};
 
             const default_settings = {
-                'font-family': 'Monaco, monospace',
-                'font-size': '8pt',
+                'font-family': 'Source Code, Monaco, monospace',
+                'font-size': '10pt',
                 'line-height': '150%',
                 'indentation-width': '4',
                 'indentation-method': 'spaces'
@@ -821,20 +821,20 @@ context-menu {
             let key = event.keyCode;
             //last_key_code = key;
 
-            if (event.metaKey || event.ctrlKey) {
-                if (event.key == "s") {
-                    event.preventDefault();
-                    event.stopPropagation();
-                    this.dispatchEvent(new CustomEvent('save', {detail: {text: this.value}}));
-                } else if (event.key == "y") {
-                    event.preventDefault();
-                    this.redo();
-                } else if (event.key == "z") {
-                    event.preventDefault();
-                    this.undo();
-                }
-                return;
-            }
+//             if (event.metaKey || event.ctrlKey) {
+//                 if (event.key == "s") {
+//                     event.preventDefault();
+//                     event.stopPropagation();
+//                     this.dispatchEvent(new CustomEvent('save', {detail: {text: this.value}}));
+//                 } else if (event.key == "y") {
+//                     event.preventDefault();
+//                     this.redo();
+//                 } else if (event.key == "z") {
+//                     event.preventDefault();
+//                     this.undo();
+//                 }
+//                 return;
+//             }
             if (key == 8) {
                 // Delete
                 event.preventDefault();

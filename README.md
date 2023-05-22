@@ -1,5 +1,7 @@
 # Workspacer version 0.8.0 for Symphony CMS version 2.5+
 
+**Attention! This fork includes tweaks for my specific needs/setup, may not be suitable to your needs. Editor currently not working properly in Safari (16.4), but fine in Firefox.**
+
 Workspacer allows files in the Workspace folder to be managed and edited. It also restores the ability, pre Symphony 2.4, to edit Page XSL templates from the Pages page.
 
 ## Requirements

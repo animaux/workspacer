@@ -253,13 +253,6 @@ dialog .flex-row {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-}
-
-dialog .flex-item {
-    width: calc(50% - .75rem);
-}
-
-code-area {
     clear: both;
     border: 1px solid rgba(0, 0, 0, .25);
     height: 100%;
@@ -288,4 +281,36 @@ div.save-error {
     margin-bottom: .9rem;
     color: #B80C00;
     text-align: center;
+}
+
+
+/* Tweaks */
+dialog {
+box-shadow: 0 0 8em black;
+}
+
+code-area {
+height: 100%;
+}
+
+/* index links to files/folders */
+td:first-child a.file,
+td:first-child a.dir {
+display: inline-block;
+color: white;
+background: rgb(var(--farbe));
+font-weight: bold;
+padding: .2em .4em .15em .4em;
+border: none;
+}
+
+td:first-child a.file:hover,
+td:first-child a.dir:hover {
+color: rgb(var(--farbe));
+background: rgba(var(--farbe),.1);
+box-shadow: .3em .3em 0 rgb(var(--farbe));
+}
+
+td:first-child a.dir::before {
+content: '/';
 }

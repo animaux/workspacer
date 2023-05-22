@@ -53,7 +53,8 @@ class Extension_Workspacer extends Extension
                 'name' => __('Workspace'),
                 'link' => 'blueprints/workspace/',
                 'relative' => false,
-                'visible' => 'yes'
+                'visible' => 'yes',
+                'limit'		=> 'developer'
             ]
         ];
     }
